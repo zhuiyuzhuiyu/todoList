@@ -1,0 +1,165 @@
+.todoapp {
+  background: #fff;
+  margin: 130px 0 40px;
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2), 0 25px 50px 0 rgba(0, 0, 0, .1);
+}
+
+.todoapp h1 {
+  position: absolute;
+  top: -140px;
+  width: 100%;
+  font-size: 80px;
+  font-weight: 400;
+  text-align: center;
+  color: #b83f45;
+  /* text-rendering: optimizeLegibility; */
+}
+
+.new-todo {
+  padding: 16px;
+  border: none;
+  /* 去除边框 */
+  outline: none;
+  /* 去除聚焦时的轮廓 */
+  background: rgba(0, 0, 0, .003);
+  box-shadow: inset 0 -2px 1px rgba(0, 0, 0, .03);
+  position: relative;
+  margin: 0;
+  width: 100%;
+  font-size: 24px;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: 1.4em;
+  color: inherit;
+}
+
+body {
+  font: 300 14px / 1.4em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #f5f5f5;
+  color: #111;
+  min-width: 230px;
+  max-width: 550px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.toggle-all {
+  width: 96px;
+  height: 62px;
+  text-align: center;
+  line-height: 62px;
+  font-size: 22px;
+  color: #737373;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.inputLabel {
+  display: flex
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.todoList li {
+  position: relative;
+  font-size: 24px;
+}
+
+.toggle {
+  text-align: center;
+  width: 40px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  border: none;
+  /* appearance: none; */
+  /* opacity: 0; */
+  cursor: pointer;
+}
+
+.todoList label {
+  word-break: break-all;
+  padding: 15px 15px 15px 60px;
+  display: block;
+  line-height: 1.2;
+  transition: color .4s;
+  font-weight: 400;
+  color: #4d4d4d;
+
+}
+
+.todoList {
+  padding: 5px 20px;
+}
+
+.footer {
+  padding: 10px 15px;
+  height: 20px;
+  text-align: center;
+  font-size: 15px;
+  border-top: 1px solid #e6e6e6;
+  box-shadow: rgba(0, 0, 0, .2) 0 1px 1px, #f6f6f6 0 8px 0 -3px, rgba(0, 0, 0, .2) 0 9px 1px -3px, #f6f6f6 0 16px 0 -6px, rgba(0, 0, 0, .2) 0 17px 2px -6p
+}
+
+.todo-count {
+  float: left;
+  text-align: left;
+}
+
+.todo-count strong {
+  font-weight: 300;
+  margin-right: 5px;
+}
+.filters{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+.filters li a.selected {
+  border-color: rgba(175, 47, 47, .2);
+}
+.filters li a{
+  color: inherit;
+  margin: 3px;
+  padding: 3px 7px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+.filters li {
+  display: inline;
+}
+.destroy{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto 0 11px;
+  font-size: 30px;
+  color: #cc9a9a;
+  transition: color .2s ease-out;
+  background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.list:hover .destroy{
+  display: block;
+  color: #af5b5e;
+}
+.list .destroy:after{
+  content: "×";
+}
